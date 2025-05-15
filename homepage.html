@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abby Stevenson</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Abby Stevenson</a>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links desktop-nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-button" id="menuButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="subtitle">Hello, I'm</h2>
+          <h1 class="title">Abby Stevenson</h1>
+          <div class="typing-container">
+            <span id="typingText"></span>
+            <span class="cursor"></span>
+          </div>
+          <p class="description">
+            I'm a Computer Science with AI graduate passionate about using AI to
+            support healthcare and conservation.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="svg-container">
+          <object
+            data="images/neural-network-animation.svg"
+            type="image/svg+xml"
+            class="hero-svg svg-animation"
+          ></object>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+          <!-- Profile Image -->
+          <div class="profile-container">
+            <img
+              src="images/me.png"
+              alt="Abby Stevenson"
+              class="profile-image"
+            />
+          </div>
+
+          <!-- About Content -->
+          <div class="about-content">
+            <h3 class="content-title">Computer Science with AI Graduate</h3>
+
+            <p class="content-text">
+              I recently graduated from Heriot-Watt University with a degree in
+              Computer Science with Artifcial Intelligence. I'm passionate about
+              using AI to support healthcare and environmental conservation,
+              with a focus on ethical, interpretable machine learning.
+            </p>
+
+            <p class="content-text">
+              My strengths lie in developing robust AI models for image
+              classification, working with real-world datasets, and applying
+              explainable AI techniques such as Grad-CAM to support transparency
+              and trust. I enjoy combining technical depth with meaningful
+              impact—whether it's analysing medical imaging data, building tools
+              to monitor biodiversity, or applying statistical learning in
+              interdisciplinary contexts.
+            </p>
+
+            <p class="context-text">
+              I also have experience with deep learning frameworks like
+              TensorFlow and PyTorch, cross-validation and model evaluation, and
+              developing end-to-end research pipelines in Python. I'm
+              particularly interested in continuing this work through research
+              or applied roles focused on responsible AI.
+            </p>
+
+            <!-- Education -->
+            <div class="education">
+              <h4 class="education-title">Education</h4>
+              <div class="education-item">
+                <span class="degree"
+                  >BSc Computer Science w/ Artificial Intelligence</span
+                >
+                <span class="year">2021-2025</span>
+              </div>
+              <div class="university">Heriot-Watt University</div>
+              <div class="education-item">
+                <span class="degree">HNC Computing</span>
+                <span class="year">2017-2018</span>
+              </div>
+              <div class="university">Edinburgh College</div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="about-cta">
+              <a href="#" class="btn small-primary-btn" id="downloadCV"
+                >Download CV</a
+              >
+              <a href="#contact" class="btn small-primary-btn">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 - Dissertation -->
+          <div class="project-card">
+            <img
+              src="images/posterDay.png"
+              alt="Abby at Dissertation poster day"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">
+                Explainable Deep Learning for ALS Classification
+              </h3>
+              <p class="project-description">
+                My final year dissertation: a deep learning pipeline using
+                DenseNet121, ECSA and Self-Attention to classify ALS-related
+                protein aggregates. Evaluated with Grad-CAM and XAI metrics for
+                interpretability and cross-class analysis.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Explainable AI</span>
+                <span class="tag">Model Evaluation</span>
+                <span class="tag">Scientific Writing</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <span>&rarr;</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img
+              src="images/robinPic.jpg"
+              alt="A Robin sitting on a branch"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">
+                Bird ID System with EfficientNetB7 & Raspberry Pi
+              </h3>
+              <p class="project-description">
+                A deep learning classification system for identifying garden
+                birds from camera footage. Built using EfficientNetB7 with
+                transfer learning and TensorFlow, and trained on a dataset
+                augmented with flipping, rotation, brightness and contrast
+                adjustments. Deployed on a Raspberry Pi.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Model Evaluation</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Data Pre-Processing</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <span>&rarr;</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img
+              src="images\meAtAthenaSWAN.jpg"
+              alt="Abby after delivering a lesson"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Athena SWAN Bursary Project</h3>
+              <p class="project-description">
+                Created lessons aimed at Second-Year high school pupils about AI
+                & Data Science. Sucessfully delivered the first lesson at
+                Falkirk High School.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI & Machine Learning</span>
+                <span class="tag">Public Speaking</span>
+                <span class="tag">Science Communication</span>
+                <span class="tag">Lesson Design</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <span>&rarr;</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+
+        <div class="skills-grid">
+          <!-- AI & Machine Learning -->
+          <div class="skill-card">
+            <h3 class="skill-category">AI & Machine Learning</h3>
+            <ul class="skill-list">
+              <li class="skill-item">TensorFlow & Keras</li>
+              <li class="skill-item">Explainable AI (Grad-CAM, SHAP)</li>
+              <li class="skill-item">Model Evaluation & Metrics</li>
+            </ul>
+          </div>
+
+          <!-- Data & Research -->
+          <div class="skill-card">
+            <h3 class="skill-category">Data & Research</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Data Analysis (Pandas, NumPy)</li>
+              <li class="skill-item">Statistical Modelling</li>
+              <li class="skill-item">
+                Data Visualisation (Matplotlib, Seaborn, D3.js)
+              </li>
+              <li class="skill-item">Data Pre-Processing</li>
+              <li class="skill-item">
+                Scientific Writing & Literature Reviews
+              </li>
+            </ul>
+          </div>
+
+          <!-- Programming & Tools -->
+          <div class="skill-card">
+            <h3 class="skill-category">Programming & Tools</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">Java</li>
+              <li class="skill-item">LaTeX</li>
+              <li class="skill-item">Google Colab & Jupyter Notebooks</li>
+              <li class="skill-item">Git</li>
+              <li class="skill-item">VS Code</li>
+            </ul>
+          </div>
+          <!-- Professional & Personal Skills -->
+          <div class="skill-card">
+            <h3 class="skill-category">Professional & Personal</h3>
+            <ul class="skill-list">
+              <li class="skill-item">Team Collaboration</li>
+              <li class="skill-item">Project Coordination & Leadership</li>
+              <li class="skill-item">Public Speaking & Presenting</li>
+              <li class="skill-item">Effective Communication</li>
+              <li class="skill-item">Time Management</li>
+              <li class="skill-item">
+                Adaptability & Creative Problem Solving
+              </li>
+              <li class="skill-item">Lesson Design & Delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proficiency" class="proficiency">
+      <div class="container">
+        <div class="proficiency-container">
+          <h3 class="skill-category">Technical Proficiencies</h3>
+
+          <div class="proficiency-grid">
+            <!-- Python -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label">Python</span>
+                <span class="proficiency-value">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <!-- TensorFlow & Keras -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label">TensorFlow & Keras</span>
+                <span class="proficiency-value">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <!-- Explainable AI -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label">Explainable AI (Grad-CAM)</span>
+                <span class="proficiency-value">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <!-- Model Evaluation & Metrics -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label"
+                  >Model Evaluation & Metrics</span
+                >
+                <span class="proficiency-value">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <!-- Data Analysis -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label"
+                  >Data Analysis (Pandas, NumPy)</span
+                >
+                <span class="proficiency-value">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <!-- Scientific Writing -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label"
+                  >Scientific Writing & Literature Reviews</span
+                >
+                <span class="proficiency-value">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <!-- LaTeX -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label">LaTeX</span>
+                <span class="proficiency-value">75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="75%"></div>
+              </div>
+            </div>
+
+            <!-- Git -->
+            <div class="proficiency-item">
+              <div class="proficiency-header">
+                <span class="proficiency-label">Git</span>
+                <span class="proficiency-value">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h3 class="contact-subtitle">Send Me a Message</h3>
+
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/xldbazzp"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-textarea"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn primary-btn full-width">
+                Send Message
+              </button>
+            </form>
+
+            <!-- Hidden thank-you message -->
+            <div id="thankYouMessage" style="display: none; margin-top: 2rem">
+              <p class="content-text">
+                <strong>Thank you for reaching out!</strong><br />
+                I'll get back to you as soon as I can.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info-container">
+            <h3 class="contact-subtitle">Contact Information</h3>
+
+            <p class="contact-text">
+              Feel free to reach out to me to ask about my projects,
+              collaboration opportunities, job inquiries, or anything else!
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <div class="contact-details">
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">
+                    <a href="mailto:abby.stevenson14@gmail.com"
+                      >abby.stevenson14@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🔗</div>
+                <div class="contact-details">
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">
+                    <a
+                      href="https://www.linkedin.com/in/abby-stevenson14/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      linkedin.com/in/abby-stevenson14
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">💻</div>
+                <div class="contact-details">
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">
+                    <a
+                      href="https://github.com/abbystevenson"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      github.com/abbystevenson
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/abbystevenson"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/abby-stevenson14/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a href="mailto:abby.stevenson14@gmail.com" class="social-link"
+              >Email</a
+            >
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Abby Stevenson. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

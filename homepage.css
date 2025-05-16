@@ -521,8 +521,8 @@ a:hover {
 /* ==== Projects Section ==== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-bottom: 48px;
 }
 
@@ -558,7 +558,7 @@ a:hover {
 }
 
 .project-content {
-  padding: 24px;
+  padding: 20px;
 }
 
 .project-title {

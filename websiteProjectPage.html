@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website Project - Abby Stevenson</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="projectPage.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="homepage.html" class="logo">Abby Stevenson</a>
+        <div class="nav-links desktop-nav">
+          <a href="homepage.html#home" class="nav-link">Home</a>
+          <a href="homepage.html#about" class="nav-link">About</a>
+          <a href="homepage.html#projects" class="nav-link active">Projects</a>
+          <a href="homepage.html#skills" class="nav-link">Skills</a>
+          <a href="homepage.html#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="menu-button" id="menuButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="homepage.html#home" class="mobile-nav-link">Home</a>
+      <a href="homepage.html#about" class="mobile-nav-link">About</a>
+      <a href="homepage.html#projects" class="mobile-nav-link">Projects</a>
+      <a href="homepage.html#skills" class="mobile-nav-link">Skills</a>
+      <a href="homepage.html#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="homepage.html">Home</a> &gt;
+          <a href="homepage.html#projects">Projects</a> &gt;
+          <span>Portfolio Website</span>
+        </div>
+        <h1 class="project-page-title">Portfolio Website</h1>
+        <div class="project-subtitle">Personal Portfolio and Digital CV</div>
+        <div class="project-tags-container">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">AWS (S3, CloudFront)</span>
+          <span class="tag">GitHub and GitHub Actions</span>
+          <span class="tag">Cloudflare</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-content-col">
+            <h2 class="content-title">Project Overview</h2>
+            <p class="project-text">
+              This site is my personal portfolio, a place to share my work,
+              background, and the things I care about in AI and development. I
+              built it to be simple, clean, and something that shows what I can
+              do while being approachable and easy to navigate.
+            </p>
+            <p class="project-text">
+              It's responsive, lightweight, and designed to work smoothly across
+              all devices. I made sure it is accessible and fast, with just
+              enough interactivity like scroll animations and typing effects to
+              make it feel alive without being overwhelming.
+            </p>
+            <div class="project-features">
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Custom theme with responsive layout
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Smooth animations and interactive elements
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Built for performance, readability, and accessibility
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col">
+            <img
+              src="images/websiteCode.png"
+              alt="Screenshot of the portfolio website code"
+              class="project-detail-image"
+            />
+            <p class="image-caption">
+              Development view of the website structure
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Goals -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Project Goals</h2>
+        <div class="goals-grid">
+          <div class="goal-card">
+            <div class="goal-icon">💻</div>
+            <h3 class="goal-title">Showcase Skills</h3>
+            <p class="goal-text">
+              Build a space to show off my projects in a clear, engaging way
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">🎨</div>
+            <h3 class="goal-title">Clean Design</h3>
+            <p class="goal-text">
+              Make sure the design feels clean and consistent
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">📱</div>
+            <h3 class="goal-title">Responsive Layout</h3>
+            <p class="goal-text">
+              Ensure it looks good and works properly on all screen sizes and
+              browsers
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">🚀</div>
+            <h3 class="goal-title">Performance</h3>
+            <p class="goal-text">
+              Keep everything as fast and smooth as possible
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="project-section">
+      <div class="container">
+        <h2 class="content-title">Development Process</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Planning and Design</h3>
+              <p class="timeline-text">
+                I started by figuring out which sections I needed, like
+                projects, skills, and contact. I planned the layout with simple
+                wireframes and chose a soft purple palette that felt
+                professional but still me.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Frontend Build</h3>
+              <p class="timeline-text">
+                The site is built using HTML5, CSS3 with variables for theming,
+                and JavaScript for animations and interactivity. I added typing
+                animations, scroll reveals, and SVG effects to bring some
+                personality into it without slowing anything down.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">GitHub Integration and CI/CD</h3>
+              <p class="timeline-text">
+                I used GitHub for version control and set up an automated
+                deployment pipeline using GitHub Actions. Whenever I push to
+                main, the site gets deployed to S3, and CloudFront cache of any
+                changed files is invalidated automatically so changes go live
+                right away.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">AWS and Cloudflare Setup</h3>
+              <p class="timeline-text">
+                I used AWS S3 to host the site and CloudFront as a CDN with
+                HTTPS. I also set up redirects so the www version forwards to
+                the main domain. Cloudflare manages the DNS and adds a bit of
+                extra caching and security.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Highlights -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Technical Highlights</h2>
+        <div class="tech-highlights">
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">CSS Variables and Theming</h3>
+            <div class="code-snippet">
+              <pre><code>:root &#123;
+  --pastel-purple: #b19cd9;
+  --light-purple: #d8bfd8;
+  --white: #f8f8ff;
+  --light-grey: #e6e6fa;
+  --grey: #3d3d3d;
+  --dark-grey: #2c2c2c;
+&#125;</code></pre>
+            </div>
+            <p class="highlight-description">
+              I used CSS variables to manage colours across the site. It made
+              theming more consistent and a lot easier to tweak as the design
+              evolved.
+            </p>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">Typing Animation</h3>
+            <div class="code-snippet">
+              <pre><code>function typeWriter() &#123;
+  const text = &quot;BSc Computer Science w/ Artificial Intelligence Graduate&quot;;
+  let i = 0;
+  const speed = 80; // typing speed in milliseconds
+
+  function type() &#123;
+    if (i &lt; text.length) &#123;
+      typingText.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    &#125;
+  &#125;
+
+  type();
+&#125;</code></pre>
+            </div>
+            <p class="highlight-description">
+              I made a custom typewriter animation for the homepage header to
+              give it a bit more character.
+            </p>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">GitHub Actions Workflow</h3>
+            <div class="code-snippet">
+              <pre><code>name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: $&#123;&#123; secrets.AWS_ACCESS_KEY &#125;&#125;
+          aws-secret-access-key: $&#123;&#123; secrets.AWS_SECRET_ACCESS_KEY &#125;&#125;
+          aws-region: $&#123;&#123; secrets.AWS_REGION &#125;&#125;
+
+      - name: Deploy files to S3
+        run: |
+          aws s3 sync . s3://abbystevenson.co.uk --delete --exact-timestamps --exclude &quot;.git/*&quot; --exclude &quot;.github/*&quot;
+
+      - name: Get list of changed files
+        id: changed
+        run: |
+          echo &quot;CHANGED_PATHS=$(git diff --name-only $&#123;&#123; github.event.before &#125;&#125; $&#123;&#123; github.sha &#125;&#125; | grep -E '\\.html$|\\.css$|\\.js$|\\.png$|\\.jpg$|\\.svg$' | sed 's|^|/|' | tr '\\n' ' ')&quot; &gt;&gt; $GITHUB_ENV
+
+      - name: Invalidate changed files in CloudFront
+        if: env.CHANGED_PATHS != ''
+        run: |
+          echo &quot;Invalidating: $CHANGED_PATHS&quot;
+          aws cloudfront create-invalidation \
+            --distribution-id $&#123;&#123; secrets.CLOUDFRONT_DIST_ID &#125;&#125; \
+            --paths $CHANGED_PATHS
+</code></pre>
+            </div>
+            <p class="highlight-description">
+              This is the GitHub Actions script I use to automatically deploy
+              and refresh CloudFront when I push updates to the site.
+            </p>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">
+              Intersection Observer for Scroll Effects
+            </h3>
+            <div class="code-snippet">
+              <pre><code>function animateBarWhenVisible(bar) &#123;
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) =&gt; &#123;
+      entries.forEach((entry) =&gt; &#123;
+        if (entry.isIntersecting) &#123;
+          const targetWidth = bar.getAttribute(&quot;data-width&quot;);
+          bar.style.width = targetWidth;
+          bar.classList.add(&quot;animated&quot;);
+          observerInstance.unobserve(bar); // only run once
+        &#125;
+      &#125;);
+    &#125;,
+    &#123;
+      threshold: 0.5, // only trigger when 50% in view
+    &#125;
+  );
+
+  observer.observe(bar);
+&#125;</code></pre>
+            </div>
+            <p class="highlight-description">
+              I used the Intersection Observer API to trigger animations when
+              elements scroll into view. It keeps things lightweight and avoids
+              unnecessary work on load.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges and Solutions -->
+    <section class="project-section">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-content-col">
+            <h2 class="content-title">Challenges and Solutions</h2>
+
+            <div class="challenge-card">
+              <h3 class="challenge-title">SVG Animation Integration</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Challenge:</strong> Making sure embedded SVGs worked
+                  consistently across different browsers.
+                </p>
+                <p class="challenge-description">
+                  <strong>Solution:</strong> I used the <code>object</code> tag
+                  to embed the SVGs and accessed their DOM using
+                  <code>contentDocument</code>. To avoid issues in unsupported
+                  environments, I included checks before applying interactive
+                  effects.
+                </p>
+              </div>
+            </div>
+
+            <div class="challenge-card">
+              <h3 class="challenge-title">Mobile Navigation</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Challenge:</strong> Creating a mobile menu that worked
+                  well across screen sizes and felt intuitive to use.
+                </p>
+                <p class="challenge-description">
+                  <strong>Solution:</strong> I built a custom hamburger menu
+                  that toggles a fullscreen overlay. I made sure touch targets
+                  were large enough and added transitions for a smoother feel.
+                </p>
+              </div>
+            </div>
+
+            <div class="challenge-card">
+              <h3 class="challenge-title">AWS Configuration and Redirects</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Challenge:</strong> Getting everything configured so
+                  the www version redirected to the root domain over HTTPS
+                  without breaking anything.
+                </p>
+                <p class="challenge-description">
+                  <strong>Solution:</strong> I used S3 static website hosting
+                  with redirect rules, added SSL via AWS Certificate Manager,
+                  and set up Cloudflare DNS properly to handle the domain
+                  forwarding.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col dual-screenshot hide-on-mobile">
+            <img
+              src="images/siteOnPhonePrt.png"
+              alt="Mobile portrait screenshot of portfolio site"
+              class="project-detail-image portrait"
+            />
+            <img
+              src="images/siteOnPhoneLscp.png"
+              alt="Mobile landscape screenshot of portfolio site"
+              class="project-detail-image landscape"
+            />
+            <p class="image-caption">
+              Screenshots from a real device showing responsive layout in both
+              orientations
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results and Reflection -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Results and Reflection</h2>
+        <div class="reflection-container">
+          <p class="reflection-text">
+            I’m really pleased with how the site turned out. Web development has
+            always been a weaker area for me but it’s clean, fast, and works
+            really well. I got to learn more about and develop my skills on
+            everything from frontend detail to deployment pipelines, and I
+            learnt a lot about caching, redirects, and keeping a site
+            lightweight without cutting corners.
+          </p>
+          <p class="reflection-text">
+            There’s more I want to do, maybe integrate dark mode and
+            accessibility enhancements. But for now, it’s doing exactly what I
+            hoped.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="github-section">
+      <h2 class="github-title">See the Code</h2>
+      <p class="github-description">
+        The full code for the website is available to see on my GitHub, feel
+        free to have a look!
+      </p>
+      <a
+        href="https://github.com/abbystevenson/PortfolioWebsite"
+        class="btn primary-btn github-btn"
+        target="_blank"
+      >
+        View on GitHub
+      </a>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+      <div class="container">
+        <div class="back-to-projects">
+          <a href="homepage.html#projects" class="btn outline-btn"
+            >View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/abbystevenson"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/abby-stevenson14/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a href="mailto:abby.stevenson14@gmail.com" class="social-link"
+              >Email</a
+            >
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Abby Stevenson. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="projectPage.js"></script>
+  </body>
+</html>

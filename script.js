@@ -328,55 +328,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Project Links Popup
 document.addEventListener("DOMContentLoaded", function () {
-  // Select all project links
   const projectLinks = document.querySelectorAll(".project-link");
 
-  // Add click event listener to each project link
   projectLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
+      const isLive = link.classList.contains("live-project");
 
-      // Create popup element
-      const popup = document.createElement("div");
-      popup.className = "cv-popup"; // Reuse the same popup class
-      popup.innerHTML = `
-        <div class="popup-content">
-          <span class="close-popup">&times;</span>
-          <h3>Project Page Coming Soon</h3>
-          <p>The detailed project pages are currently under development. Please check back soon!</p>
-        </div>
-      `;
+      if (!isLive) {
+        e.preventDefault(); // only works on project pages that aren't live
 
-      // Add popup to body
-      document.body.appendChild(popup);
+        const popup = document.createElement("div");
+        popup.className = "cv-popup";
+        popup.innerHTML = `
+          <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Project Page Coming Soon</h3>
+            <p>This detailed project page is currently under development. Right now only Portfolio Website's Project page is live. Please check back soon!</p>
+          </div>
+        `;
 
-      // Show popup with animation
-      setTimeout(() => {
-        popup.classList.add("show");
-      }, 10);
+        document.body.appendChild(popup);
+        setTimeout(() => popup.classList.add("show"), 10);
 
-      // Close button functionality
-      const closeBtn = popup.querySelector(".close-popup");
-      closeBtn.addEventListener("click", function () {
-        popup.classList.remove("show");
-
-        // Remove popup after animation completes
-        setTimeout(() => {
-          document.body.removeChild(popup);
-        }, 300);
-      });
-
-      // Close popup when clicking outside
-      popup.addEventListener("click", function (event) {
-        if (event.target === popup) {
+        const closeBtn = popup.querySelector(".close-popup");
+        closeBtn.addEventListener("click", () => {
           popup.classList.remove("show");
+          setTimeout(() => popup.remove(), 300);
+        });
 
-          // Remove popup after animation completes
-          setTimeout(() => {
-            document.body.removeChild(popup);
-          }, 300);
-        }
-      });
+        popup.addEventListener("click", (event) => {
+          if (event.target === popup) {
+            popup.classList.remove("show");
+            setTimeout(() => popup.remove(), 300);
+          }
+        });
+      }
     });
   });
 });

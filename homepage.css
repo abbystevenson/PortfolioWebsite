@@ -44,7 +44,7 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 /* ==== Typography ==== */
@@ -408,6 +408,19 @@ a:hover {
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-48px);
+}
+
+@media screen and (max-width: 991px) {
+  .profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(0px);
+  }
 }
 
 .content-title {

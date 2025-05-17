@@ -55,7 +55,7 @@ document.addEventListener("click", (event) => {
 function typeWriter() {
   const text = "BSc Computer Science w/ Artificial Intelligence Graduate";
   let i = 0;
-  const speed = 80; // typing speed in milliseconds
+  const speed = 45; // typing speed in milliseconds
 
   function type() {
     if (i < text.length) {

@@ -463,4 +463,68 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 `;
   document.head.appendChild(syntaxStyle);
+
+  console.log("ALS Project Page JavaScript loaded successfully");
+
+  // Get elements
+  const viewBtn = document.getElementById("viewPosterBtn");
+  const modal = document.getElementById("posterModal");
+  const closeBtn = document.getElementById("closePosterBtn");
+
+  console.log("Elements found:", {
+    viewBtn: !!viewBtn,
+    modal: !!modal,
+    closeBtn: !!closeBtn,
+  });
+
+  if (viewBtn && modal && closeBtn) {
+    console.log("Setting up poster modal...");
+
+    // Show modal function
+    function showModal() {
+      console.log("Opening modal...");
+      modal.style.display = "flex";
+      modal.style.opacity = "1";
+      document.body.style.overflow = "hidden";
+    }
+
+    // Close modal function
+    function closeModal() {
+      console.log("Closing modal...");
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Event listeners
+    viewBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log("Poster button clicked!");
+      showModal();
+    });
+
+    closeBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      closeModal();
+    });
+
+    // Click outside to close
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Escape key to close
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        closeModal();
+      }
+    });
+
+    console.log("Poster modal initialised successfully");
+  } else {
+    console.error("Failed to initialise poster modal");
+  }
 });

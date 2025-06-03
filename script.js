@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="popup-content">
             <span class="close-popup">&times;</span>
             <h3>Project Page Coming Soon</h3>
-            <p>This detailed project page is currently under development. Right now only Portfolio Website's Project page is live. Please check back soon!</p>
+            <p>This detailed project page is currently under development. Please check back soon!</p>
           </div>
         `;
 

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Explainable Deep Learning for ALS Classification - Abby Stevenson
+    </title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="projectPage.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="homepage.html" class="logo">Abby Stevenson</a>
+        <div class="nav-links desktop-nav">
+          <a href="homepage.html#home" class="nav-link">Home</a>
+          <a href="homepage.html#about" class="nav-link">About</a>
+          <a href="homepage.html#projects" class="nav-link active">Projects</a>
+          <a href="homepage.html#skills" class="nav-link">Skills</a>
+          <a href="homepage.html#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="menu-button" id="menuButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="homepage.html#home" class="mobile-nav-link">Home</a>
+      <a href="homepage.html#about" class="mobile-nav-link">About</a>
+      <a href="homepage.html#projects" class="mobile-nav-link">Projects</a>
+      <a href="homepage.html#skills" class="mobile-nav-link">Skills</a>
+      <a href="homepage.html#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="homepage.html">Home</a> &gt;
+          <a href="homepage.html#projects">Projects</a> &gt;
+          <span>Dissertation Project</span>
+        </div>
+        <h1 class="project-page-title">
+          Deep Learning-Based Characterisation of TDP-43 Protein Aggregation in
+          ALS
+        </h1>
+        <div class="project-subtitle">
+          Using Transfer Learning, Attention Mechanisms and Explainable AI
+        </div>
+        <div class="project-tags-container">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Explainable AI</span>
+          <span class="tag">Model Evaluation</span>
+          <span class="tag">Scientific Writing</span>
+          <span class="tag">Completed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-content-col">
+            <h2 class="content-title">Project Overview</h2>
+            <p class="project-text">
+              This project was my final-year dissertation, focused on
+              classifying TDP-43 protein aggregation patterns in ALS using deep
+              learning and explainable AI. The aim was to distinguish between
+              three clinical categories: Control (Healthy individuals),
+              Concordant (ALS with cognitive impairment), and Discordant (ALS
+              without cognitive impairment), based on post-mortem
+              immunohistochemistry images.
+            </p>
+            <p class="project-text">
+              My focus was on evaluating model architectures, attention
+              mechanisms, and explainability techniques to build something
+              trustworthy and informative. I compared DenseNet121 and
+              EfficientNetB0 with combinations of Self-Attention and Effective
+              Channel Spatial Attention (ECSA). The best-performing model
+              (DenseNet121 + SA + ECSA) reached 85.33% accuracy and an MCC of
+              0.7725. To ensure clinical trust, I used Grad-CAM for
+              explainability and calculated several custom XAI metrics like
+              activation focus and class similarity. The final results show
+              strong performance and reliable interpretability, helping bridge
+              the gap between AI models and clinicians.
+            </p>
+            <p class="project-text">
+              Clinicians currently can't distinguish between Concordant and
+              Discordant cases in TDP-43 stained images, which makes this a
+              particularly difficult and important challenge. The goal of this
+              project wasn’t just to classify images, but to help deepen
+              clinical understanding of how ALS presents at the pathological
+              level.
+            </p>
+
+            <div class="project-features">
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Applied transfer learning with medical data for ALS
+                  classification
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Designed a robust evaluation pipeline using 5-fold CV and
+                  multiple seeds
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-text">
+                  Focused heavily on explainability using Grad-CAM and custom
+                  XAI metrics
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col">
+            <img
+              src="images/posterDay.png"
+              alt="Abby presenting her dissertation at poster day"
+              class="project-detail-image"
+            />
+            <p class="image-caption">
+              Presenting my research at the Computer Science Poster Day
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Goals -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Research Objectives</h2>
+        <div class="goals-grid">
+          <div class="goal-card">
+            <div class="goal-icon">🎯</div>
+            <h3 class="goal-title">Three-Class Classification</h3>
+            <p class="goal-text">
+              Develop a deep learning model to accurately classify TDP-43
+              stained brain tissue into Control, Concordant, and Discordant ALS
+              categories.
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">💡</div>
+            <h3 class="goal-title">Model Interpretability</h3>
+            <p class="goal-text">
+              Use Grad-CAM to generate transparent and clinically meaningful
+              explanations of the model’s predictions.
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">🔬</div>
+            <h3 class="goal-title">Transfer Learning Comparison</h3>
+            <p class="goal-text">
+              Compare DenseNet121 and EfficientNetB0 architectures to identify
+              which works best for this kind of clinical image classification.
+            </p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">📈</div>
+            <h3 class="goal-title">Attention Mechanism Integration</h3>
+            <p class="goal-text">
+              Investigate the impact of adding Self-Attention and ECSA modules,
+              both separately and together, to improve feature focus and
+              performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="project-section">
+      <div class="container">
+        <h2 class="content-title">Methodology & Approach</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Dataset Preparation & Analysis</h3>
+              <p class="timeline-text">
+                I used 190 high-resolution immunohistochemistry images from the
+                University of Aberdeen, this was previously expanded by other
+                researchers to 1,330 through careful, clinically consistent
+                augmentation. These images, stained using a TDP-43 RNA Aptamer,
+                were categorised as Control, Concordant, or Discordant. Proper
+                train/validation/test splits were applied.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">
+                Transfer Learning Architecture Comparison
+              </h3>
+              <p class="timeline-text">
+                I implemented both DenseNet121 and EfficientNetB0 using
+                pre-trained ImageNet weights, then fine-tuned them on the ALS
+                dataset to adapt to domain-specific features. This helped reduce
+                training time while still achieving strong performance.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Attention Mechanism Integration</h3>
+              <p class="timeline-text">
+                I added lightweight Self-Attention and Effective Channel Spatial
+                Attention (ECSA) layers to each model variant. Each model was
+                run under four setups: no attention, Self-Attention only, ECSA
+                only, and both combined, to determine which combination best
+                improved model focus.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Model Training & Cross-Validation</h3>
+              <p class="timeline-text">
+                All models were trained using 5-fold stratified cross-validation
+                with 10 random seeds to ensure stable results. I used the same
+                hyperparameters across experiments: learning rate 0.0001, batch
+                size 64, dropout 0.6, and early stopping to prevent overfitting.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Explainable AI Implementation</h3>
+              <p class="timeline-text">
+                I used Grad-CAM to generate visual explanations for the
+                best-performing model. To go beyond visuals, I also introduced
+                XAI metrics like activation intensity, cross-class similarity,
+                and correlation between confidence and explanation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Technical Implementation</h2>
+        <div class="tech-highlights">
+          <!-- Attention Mechanism Integration -->
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">Attention Mechanism Implementation</h3>
+            <div class="code-snippet">
+              <pre><code># ECSA and Self-Attention blocks
+            def ECSA_block(input_tensor):
+                # Channel attention
+                squeeze = GlobalAveragePooling2D()(input_tensor)
+                excitation = Dense(units=input_tensor.shape[-1] // 16, activation='relu')(squeeze)
+                excitation = Dense(units=input_tensor.shape[-1], activation='sigmoid')(excitation)
+                channel_attention = Multiply()([input_tensor, Reshape((1, 1, input_tensor.shape[-1]))(excitation)])
+
+                # Spatial attention
+                spatial_attention = Conv2D(1, kernel_size=7, padding='same', activation='sigmoid')(channel_attention)
+                spatial_attention = Multiply()([channel_attention, spatial_attention])
+
+                return spatial_attention
+
+            def self_attention(input_tensor):
+                q = Conv2D(filters=input_tensor.shape[-1] // 8, kernel_size=1)(input_tensor)
+                k = Conv2D(filters=input_tensor.shape[-1] // 8, kernel_size=1)(input_tensor)
+                v = Conv2D(filters=input_tensor.shape[-1], kernel_size=1)(input_tensor)
+
+                attention_scores = tf.matmul(
+                    tf.reshape(q, [tf.shape(q)[0], -1, tf.shape(q)[-1]]),
+                    tf.transpose(tf.reshape(k, [tf.shape(k)[0], -1, tf.shape(k)[-1]]), [0, 2, 1])
+                )
+                attention_weights = tf.nn.softmax(attention_scores, axis=-1)
+
+                attention_output = tf.matmul(attention_weights,
+                    tf.reshape(v, [tf.shape(v)[0], -1, tf.shape(v)[-1]])
+                )
+                attention_output = tf.reshape(attention_output, tf.shape(input_tensor))
+
+                return Add()([input_tensor, attention_output])
+          </code></pre>
+            </div>
+            <p class="highlight-description">
+              I implemented lightweight versions of Self-Attention and ECSA
+              attention modules and added them directly to each model's
+              convolutional output. These helped the model learn which features
+              were most relevant for distinguishing between classes while
+              reducing overfitting.
+            </p>
+          </div>
+
+          <!-- Cross-Validation -->
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">5-Fold Cross-Validation</h3>
+            <div class="code-snippet">
+              <pre><code># Evaluate each configuration using 5-fold CV and multiple seeds
+            def stratified_k_fold_evaluation(X, y, model_builder, k=5, n_seeds=10):
+                results = []
+                for seed in range(n_seeds):
+                    np.random.seed(seed)
+                    tf.random.set_seed(seed)
+                    skf = StratifiedKFold(n_splits=k, shuffle=True, random_state=seed)
+                    for train_idx, val_idx in skf.split(X, y):
+                        X_train, X_val = X[train_idx], X[val_idx]
+                        y_train, y_val = y[train_idx], y[val_idx]
+                        model = model_builder()
+                        model.compile(optimizer=Adam(0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+                        model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=50, batch_size=64,
+                                  callbacks=[EarlyStopping(patience=10, restore_best_weights=True), ReduceLROnPlateau(factor=0.5, patience=5)],
+                                  verbose=0)
+                        y_pred = model.predict(X_val)
+                        y_true = np.argmax(y_val, axis=1)
+                        y_pred_classes = np.argmax(y_pred, axis=1)
+                        results.append({
+                            'mcc': matthews_corrcoef(y_true, y_pred_classes),
+                            'accuracy': accuracy_score(y_true, y_pred_classes),
+                            'seed': seed
+                        })
+                return results
+            </code></pre>
+            </div>
+            <p class="highlight-description">
+              Stratified 5-fold cross-validation was repeated with 10 different
+              seeds to make sure the results were stable and reproducible. All
+              configurations used the same training setup to ensure fair
+              comparison.
+            </p>
+          </div>
+
+          <!-- Performance Metrics -->
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">
+              Performance Metrics & Class Analysis
+            </h3>
+            <div class="code-snippet">
+              <pre><code># Evaluate overall and per-class performance
+            def calculate_comprehensive_metrics(y_true, y_pred, class_names):
+                y_true_classes = np.argmax(y_true, axis=1)
+                y_pred_classes = np.argmax(y_pred, axis=1)
+                accuracy = accuracy_score(y_true_classes, y_pred_classes)
+                mcc = matthews_corrcoef(y_true_classes, y_pred_classes)
+                sensitivity = recall_score(y_true_classes, y_pred_classes, average=None)
+                specificity = []
+                for i in range(len(class_names)):
+                    tn = np.sum((y_true_classes != i) & (y_pred_classes != i))
+                    fp = np.sum((y_true_classes != i) & (y_pred_classes == i))
+                    spec = tn / (tn + fp) if (tn + fp) > 0 else 0
+                    specificity.append(spec)
+                return {
+                    'accuracy': accuracy,
+                    'mcc': mcc,
+                    'sensitivity': sensitivity,
+                    'specificity': specificity
+                }
+            </code></pre>
+            </div>
+            <p class="highlight-description">
+              I used both accuracy and Matthews Correlation Coefficient (MCC) to
+              evaluate overall performance, and calculated sensitivity and
+              specificity for each class to understand how well the model
+              recognised each clinical group.
+            </p>
+          </div>
+
+          <!-- Explainability -->
+          <div class="tech-highlight-card">
+            <h3 class="highlight-title">Grad-CAM & Explainability Metrics</h3>
+            <div class="code-snippet">
+              <pre><code># Compute explainability metrics using Grad-CAM outputs
+            def calculate_xai_metrics(gradcam_maps, predictions, class_names):
+                metrics = {}
+                for i, class_name in enumerate(class_names):
+                    class_maps = [map for j, map in enumerate(gradcam_maps) if np.argmax(predictions[j]) == i]
+                    if class_maps:
+                        metrics[class_name] = {
+                            'mean_activation': np.mean([np.mean(map) for map in class_maps]),
+                            'activation_focus': np.mean([np.sum(map > 0.5) / map.size for map in class_maps]) * 100
+                        }
+                return metrics
+            </code></pre>
+            </div>
+            <p class="highlight-description">
+              I applied Grad-CAM to the best model (DenseNet121 with ECSA and
+              Self-Attention) and used custom metrics to measure how intense and
+              focused its attention was. This helped make the model's decisions
+              more transparent and clinically meaningful.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="project-section">
+      <div class="container">
+        <h2 class="content-title">Key Results & Findings</h2>
+
+        <!-- Row 1: Model Performance -->
+        <div class="project-grid">
+          <div class="project-content-col">
+            <div class="challenge-card">
+              <h3 class="challenge-title">Model Performance</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Best Configuration:</strong> DenseNet121 with both
+                  Self-Attention and ECSA performed the strongest overall,
+                  reaching a mean MCC of 0.7725 and classification accuracy of
+                  85.33%.
+                </p>
+                <p class="challenge-description">
+                  <strong>Architecture Comparison:</strong> DenseNet121 had the
+                  best peak results, but EfficientNetB0 was more consistent
+                  across folds, showing lower variation. Both models benefitted
+                  from the attention layers, though DenseNet121 handled the
+                  pathological complexity better.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col">
+            <img
+              src="images/modelComparison.png"
+              alt="Table showing performance comparison across all model configurations"
+              class="project-detail-image"
+            />
+            <p class="image-caption">
+              Performance comparison across all model and attention mechanism
+              configurations
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: Per-Class Performance -->
+        <div class="project-grid">
+          <div class="project-content-col">
+            <div class="challenge-card">
+              <h3 class="challenge-title">Per-Class Performance</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Control Class:</strong> Performed exceptionally well,
+                  with a sensitivity of 86.13% and specificity of 98.81%,
+                  meaning the model was reliably picking out healthy samples.
+                </p>
+                <p class="challenge-description">
+                  <strong>Concordant vs Discordant:</strong> Concordant cases
+                  (ALS with cognitive impairment) were hardest to classify, with
+                  sensitivity at 83.23%. Discordant cases (ALS without cognitive
+                  impairment) reached 70.66% sensitivity, which is promising
+                  given their subtle differences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col">
+            <img
+              src="images/classPerformance.png"
+              alt="Class-specific performance of DenseNet121 and EfficientNetB0"
+              class="project-detail-image"
+            />
+            <p class="image-caption">
+              Class-specific performance for every DenseNet121 and
+              EfficientNetB0 configuration
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 3: Explainability -->
+        <div class="project-grid">
+          <div class="project-content-col">
+            <div class="challenge-card">
+              <h3 class="challenge-title">Explainability & Clinical Insight</h3>
+              <div class="challenge-content">
+                <p class="challenge-description">
+                  <strong>Grad-CAM Focus:</strong> The Control class had the
+                  clearest focus in Grad-CAM maps, with 21.53% of activations
+                  concentrated in key regions and a mean activation of 0.343.
+                  This suggests the model was picking up clear structural
+                  markers in healthy tissue.
+                </p>
+                <p class="challenge-description">
+                  <strong>Cross-Class Overlap:</strong> High similarity (0.809)
+                  was found between Control and Discordant attention maps, which
+                  could reflect overlapping structural features. Concordant and
+                  Discordant samples had the lowest similarity (0.623), pointing
+                  to distinct differences in presentation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-image-col">
+            <img
+              src="images/gradCamExample.png"
+              alt="Grad-CAM visualisation of Control class"
+              class="project-detail-image"
+            />
+            <p class="image-caption">
+              Grad-CAM visualisation showing where the model focused to identify
+              protein aggregates in a Control sample
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="project-section highlight-section">
+      <div class="container">
+        <h2 class="content-title">Reflection & Impact</h2>
+        <div class="reflection-container">
+          <p class="reflection-text">
+            This project marks the end of my undergraduate journey in Computer
+            Science with Artificial Intelligence, and I couldn’t have asked for
+            a more meaningful way to finish. Getting to work with real clinical
+            data from the University of Aberdeen gave me first-hand experience
+            of what it’s like to apply AI to something that actually matters.
+          </p>
+          <p class="reflection-text">
+            Exploring different transfer learning models and attention
+            mechanisms taught me a lot about the importance of good experimental
+            design. Finding that DenseNet121 with both Self-Attention and ECSA
+            gave the best results felt like real proof that the architectural
+            choices I made mattered. It wasn’t just about getting good numbers,
+            it was about building something reliable.
+          </p>
+
+          <p class="reflection-text">
+            I’ve had the opportunity to present this work a few times now. First
+            at the Machine Learning in Health group meeting at Heriot-Watt, then
+            as part of my final-year Poster Day assessment, and finally at the
+            Women in Data Science 2025 event. I’m currently planning to work
+            with my supervisor, Dr Marta Vallejo, over the summer to develop
+            this project into a publishable research paper. Her support and
+            guidance throughout this project have been invaluable.
+          </p>
+
+          <p class="reflection-text">
+            Most importantly though, this whole project deepened my
+            understanding and passion for AI in healthcare. I've learned a lot
+            through the course of this project and this has only strengthened my
+            desire to continue pursuing this field.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section class="poster-section">
+      <div class="view-poster-container">
+        <button class="btn outline-btn" id="viewPosterBtn">
+          Take a Look at My Poster
+        </button>
+      </div>
+
+      <!-- Modal Overlay -->
+      <div id="posterModal" class="modal-overlay">
+        <span class="close-modal" id="closePosterBtn">&times;</span>
+        <img
+          src="images/dissPoster.png"
+          alt="Dissertation Poster"
+          class="modal-poster-image"
+        />
+      </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+      <div class="container">
+        <div class="back-to-projects">
+          <a href="homepage.html#projects" class="btn outline-btn"
+            >View All Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/abbystevenson"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/abby-stevenson14/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="mailto:abby.stevenson14@gmail.com"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Email</a
+            >
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="currentYear"></span> Abby Stevenson. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="dissProjectPage.js"></script>
+  </body>
+</html>

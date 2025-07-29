@@ -53,7 +53,7 @@ document.addEventListener("click", (event) => {
 
 // Typing Animation
 function typeWriter() {
-  const text = "BSc Computer Science w/ Artificial Intelligence Graduate";
+  const text = "MSc Advanced Computing with Artificial Intelligence Student";
   let i = 0;
   const speed = 45; // typing speed in milliseconds
 
@@ -270,62 +270,6 @@ window.addEventListener("load", () => {
     });
 });
 
-// CV Download Button Popup
-document.addEventListener("DOMContentLoaded", function () {
-  const downloadCVButton = document.getElementById("downloadCV");
-
-  if (downloadCVButton) {
-    console.log("CV button found and listener attached");
-    downloadCVButton.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      // Create popup element
-      const popup = document.createElement("div");
-      popup.className = "cv-popup";
-      popup.innerHTML = `
-        <div class="popup-content">
-          <span class="close-popup">&times;</span>
-          <h3>Work In Progress</h3>
-          <p>My CV is currently being updated. Please check back soon!</p>
-        </div>
-      `;
-
-      // Add popup to body
-      document.body.appendChild(popup);
-
-      // Show popup with animation
-      setTimeout(() => {
-        popup.classList.add("show");
-      }, 10);
-
-      // Close button functionality
-      const closeBtn = popup.querySelector(".close-popup");
-      closeBtn.addEventListener("click", function () {
-        popup.classList.remove("show");
-
-        // Remove popup after animation completes
-        setTimeout(() => {
-          document.body.removeChild(popup);
-        }, 300);
-      });
-
-      // Close popup when clicking outside
-      popup.addEventListener("click", function (event) {
-        if (event.target === popup) {
-          popup.classList.remove("show");
-
-          // Remove popup after animation completes
-          setTimeout(() => {
-            document.body.removeChild(popup);
-          }, 300);
-        }
-      });
-    });
-  } else {
-    console.log("CV button not found on page load");
-  }
-});
-
 // Project Links Popup
 document.addEventListener("DOMContentLoaded", function () {
   const projectLinks = document.querySelectorAll(".project-link");
@@ -365,4 +309,27 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.getElementById("openCVPopup");
+  const closeBtn = document.getElementById("closeCVPopup");
+  const popup = document.getElementById("cvPopup");
+
+  if (openBtn && popup && closeBtn) {
+    openBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      popup.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popup.classList.remove("show");
+    });
+
+    popup.addEventListener("click", function (e) {
+      if (e.target === popup) {
+        popup.classList.remove("show");
+      }
+    });
+  }
 });

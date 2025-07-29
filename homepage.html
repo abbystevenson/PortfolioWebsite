@@ -86,14 +86,17 @@
 
           <!-- About Content -->
           <div class="about-content">
-            <h3 class="content-title">Computer Science with AI Graduate</h3>
+            <h3 class="content-title">
+              MSc Advanced Computing with Artificial Intelligence Student
+            </h3>
 
             <p class="content-text">
-              I'll be graduating from Heriot-Watt University with a degree in
-              Computer Science with Artificial Intelligence next month. I'm
-              passionate about using AI to support healthcare and environmental
-              conservation, with a focus on ethical and interpretable machine
-              learning.
+              I recently graduated with a 2:1 BSc (Hons) in Computer Science
+              with Artificial Intelligence from Heriot-Watt University, and I'm
+              starting an MSc Advanced Computing with Artificial Intelligence at
+              the University of Stirling in September. I'm passionate about
+              using AI to support healthcare and environmental conservation,
+              with a focus on ethical and interpretable machine learning.
             </p>
 
             <p class="content-text">
@@ -113,18 +116,24 @@
             </p>
 
             <p class="content-text">
-              I'm currently applying for a Master's in Artificial Intelligence
-              for 2025–26, with the long-term goal of progressing into a PhD.
-              Right now, I'm open to full-time or part-time work over the
-              summer, and part-time roles alongside my studies next year if my
-              application is successful. I'm especially interested in roles
-              related to ethical AI, research, or applied machine learning that
-              align with my values and interests.
+              My long-term goal is to progress into a PhD after finishing my
+              Masters. Right now, I'm open to full-time or part-time work over
+              the summer, and part-time roles alongside my studies from
+              September. I'm especially interested in roles related to ethical
+              AI, research, or applied machine learning that align with my
+              values and interests.
             </p>
 
             <!-- Education -->
             <div class="education">
               <h4 class="education-title">Education</h4>
+              <div class="education-item">
+                <span class="degree"
+                  >MSc Advanced Computing with Artificial Intelligence</span
+                >
+                <span class="year">2025–2026</span>
+              </div>
+              <div class="university">University of Stirling</div>
               <div class="education-item">
                 <span class="degree"
                   >BSc Computer Science w/ Artificial Intelligence</span
@@ -141,8 +150,8 @@
 
             <!-- CTA Buttons -->
             <div class="about-cta">
-              <a href="#" class="btn small-primary-btn" id="downloadCV"
-                >Download CV</a
+              <a href="#" class="btn small-primary-btn" id="openCVPopup"
+                >View my CV</a
               >
               <a href="#contact" class="btn small-primary-btn">Get in Touch</a>
             </div>
@@ -619,5 +628,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- CV Popup -->
+    <div class="cv-popup" id="cvPopup">
+      <div class="cv-embed-wrapper">
+        <button
+          class="download-cv-button"
+          onclick="window.open('files/AbbyStevenson-CV2025.pdf')"
+        >
+          ⬇ Download
+        </button>
+        <button class="close-popup" id="closeCVPopup">&times;</button>
+        <iframe
+          src="files/AbbyStevenson-CV2025.pdf"
+          class="cv-iframe"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
   </body>
 </html>

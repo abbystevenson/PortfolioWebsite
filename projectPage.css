@@ -7,7 +7,7 @@
     var(--pastel-purple) 0%,
     var(--light-purple) 100%
   );
-  color: var(--white);
+  color: #f8f8ff;
   padding: 60px 0 40px;
   margin-top: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@
 }
 
 .breadcrumbs a {
-  color: var(--white);
+  color: #f8f8ff;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
@@ -36,7 +36,7 @@
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: var(--white);
+  color: #f8f8ff;
 }
 
 .project-subtitle {
@@ -54,7 +54,7 @@
 
 .project-tags-container .tag {
   background-color: rgba(255, 255, 255, 0.2);
-  color: var(--white);
+  color: #f8f8ff;
   font-size: 13px;
   font-weight: 500;
   padding: 6px 12px;
@@ -354,6 +354,28 @@
 .highlight-description {
   font-size: 14px;
   color: var(--grey);
+}
+
+/* Dark Mode Code Snippets */
+.dark-mode .code-snippet {
+  background-color: #2d2d2d;
+  border-left-color: var(--pastel-purple);
+}
+
+.dark-mode .code-snippet code {
+  color: #e0e0e0;
+}
+
+.dark-mode .keyword {
+  color: #569cd6;
+}
+
+.dark-mode .string {
+  color: #ce9178;
+}
+
+.dark-mode .comment {
+  color: #6a9955;
 }
 
 /* Challenges & Solutions */

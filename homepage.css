@@ -6,12 +6,31 @@
   --light-grey: #e6e6fa;
   --grey: #3d3d3d;
   --dark-grey: #2c2c2c;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --card-bg: #ffffff;
+  --footer-bg: #2c2c2c;
+}
+
+.dark-mode {
+  --white: #121212;
+  --light-grey: #2d2d2d;
+  --grey: #e0e0e0;
+  --dark-grey: #ffffff;
+  --pastel-purple: #b19cd9;
+  --light-purple: #9575cd;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg: #1e1e1e;
+  --footer-bg: #000000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body.enable-transitions * {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 html {
@@ -82,7 +101,7 @@ a:hover {
   background-color: var(--white);
   z-index: 1000;
   padding: 16px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .navbar .container {
@@ -100,6 +119,7 @@ a:hover {
 .nav-links {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .nav-link {
@@ -264,7 +284,7 @@ a:hover {
   width: 90%;
   max-width: 900px;
   height: 90%;
-  background: var(--white);
+  background: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -281,7 +301,7 @@ a:hover {
   top: 12px;
   right: 48px;
   background-color: var(--pastel-purple);
-  color: var(--white);
+  color: #f8f8ff;
   border: none;
   padding: 8px 14px;
   border-radius: 4px;
@@ -402,7 +422,7 @@ a:hover {
 
 .primary-btn {
   background-color: var(--pastel-purple);
-  color: var(--white);
+  color: #f8f8ff;
 }
 
 .primary-btn:hover {
@@ -427,7 +447,7 @@ a:hover {
   padding: 8px 16px;
   font-size: 14px;
   background-color: var(--pastel-purple);
-  color: var(--white);
+  color: #f8f8ff;
 }
 
 .small-secondary-btn {
@@ -558,7 +578,7 @@ a:hover {
 }
 
 .popup-content {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   padding: 24px;
   border-radius: 8px;
   max-width: 400px;
@@ -617,7 +637,7 @@ a:hover {
 }
 
 .project-card {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -696,7 +716,7 @@ a:hover {
 }
 
 .skill-card {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: 8px;
   padding: 24px;
   border-top: 3px solid var(--pastel-purple);
@@ -731,7 +751,7 @@ a:hover {
 }
 
 .proficiency-container {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: 12px;
   padding: 32px;
   margin: 0 24px 32px;
@@ -795,11 +815,37 @@ a:hover {
   gap: 48px;
 }
 
+
 .contact-subtitle {
   font-size: 20px;
   font-weight: 600;
   color: var(--pastel-purple);
   margin-bottom: 16px;
+}
+
+/* ==== Theme Toggle ==== */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  font-size: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--light-grey);
+  color: var(--pastel-purple);
+}
+
+/* Adjust SVG colors in dark mode if needed */
+.dark-mode .hero-svg {
+  filter: brightness(0.9);
 }
 
 .contact-text {
@@ -825,7 +871,9 @@ a:hover {
   border-radius: 6px;
   border: 1px solid var(--light-grey);
   outline: none;
-  transition: border 0.3s ease;
+  transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--card-bg);
+  color: var(--grey);
 }
 
 .form-input:focus,
@@ -899,7 +947,7 @@ a:hover {
 
 /* ==== Footer ==== */
 .footer {
-  background-color: var(--dark-grey);
+  background-color: var(--footer-bg);
   padding: 32px 0;
   color: var(--light-grey);
   margin-top: auto;
@@ -977,18 +1025,6 @@ a:hover {
     margin: 0 16px 24px;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-form-container {
-    order: 2;
-  }
-
-  .contact-info-container {
-    order: 1;
-    margin-bottom: 32px;
-  }
   .svg-container {
     display: none;
   }
@@ -1027,4 +1063,57 @@ a:hover {
   .about-cta {
     flex-direction: column;
   }
+}
+
+/* Dark Mode Toggle Switch */
+.theme-toggle {
+  background: var(--light-grey);
+  border: 2px solid var(--pastel-purple);
+  border-radius: 20px;
+  width: 56px;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.theme-toggle .icon {
+  font-size: 14px;
+  line-height: 1;
+  z-index: 1;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.toggle-slider {
+  background-color: var(--pastel-purple);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 2;
+}
+
+/* Dark Mode State for Toggle */
+.dark-mode .theme-toggle {
+  background-color: var(--light-grey);
+  border-color: var(--pastel-purple);
+}
+
+.dark-mode .toggle-slider {
+  transform: translateX(28px);
+  background-color: var(--pastel-purple);
+}
+
+/* Hover effects */
+.theme-toggle:hover {
+  opacity: 0.9;
 }

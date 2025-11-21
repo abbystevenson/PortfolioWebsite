@@ -7,6 +7,28 @@ const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 const projectCards = document.querySelectorAll(".project-card");
 const contactForm = document.getElementById("contactForm");
 const currentYearElement = document.getElementById("currentYear");
+const themeToggle = document.getElementById("themeToggle");
+
+// Theme Toggle Logic
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "dark") {
+  document.body.classList.add("dark-mode");
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+}
+
+// Enable transitions after page load to prevent flashing
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.body.classList.add("enable-transitions");
+  }, 100);
+});
 
 function animateBarWhenVisible(bar) {
   const observer = new IntersectionObserver(

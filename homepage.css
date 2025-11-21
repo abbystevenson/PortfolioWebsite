@@ -122,6 +122,12 @@ a:hover {
   align-items: center;
 }
 
+.nav-actions {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .nav-link {
   color: var(--grey);
   font-weight: 500;
@@ -1002,6 +1008,10 @@ a:hover {
 
   .menu-button {
     display: block;
+  }
+
+  .nav-actions {
+    gap: 16px;
   }
 
   .about-grid {
